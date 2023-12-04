@@ -474,7 +474,7 @@ footer li {
   /* Tablet */
   @media (max-width: 768px) {
     html {
-        font-size: 85%;
+        font-size: 65%;
     }
 
     body {
@@ -509,7 +509,7 @@ footer li {
   /* Mobile Phopne */
   @media (max-width: 576px) {    
     html {
-        font-size: 80%;
+        font-size: 60%;
     }
 
     .simply-countdown>.simply-section {
