@@ -3,11 +3,13 @@
     --cream: #ceb8a4;
     --bg: #0a0a0a;
     --shadow: 0 2px 2px rgb(0 0 0 / 0.5) 
+    --bghome: radial-gradient( #8e9db2, #2d2e39);
 }
 
 body {
     font-size: 1.2rem;
     font-family: 'Work Sans', sans-serif;
+    /* min-height: 10000px; */
 }
 
 .hero:before {
@@ -37,6 +39,7 @@ body {
 .hero h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 6rem;
+    /* color: var(--pink); */
     color: black;
     text-shadow: 2px 2px 2px #6f8cb6;
 }
@@ -113,7 +116,9 @@ body {
 
 .mynavbar {
     background-color: rgba(255, 255, 255, 0.3)!important;
-    backdrop-filter: blur(4px);  
+    backdrop-filter: blur(4px);
+    
+    
 }
 
 .mynavbar .offcanvas {
@@ -135,6 +140,11 @@ body {
 .mynavbar .offcanvas-body a:hover {
     background-color: #8e9db2;
     color: white;
+
+}
+
+.mynavbar .offcanvas-body {
+    text-align: center;
 }
 
 .mynavbar .nav-link {
@@ -155,6 +165,7 @@ body {
 
 
 .home h2, 
+.story h2,
 .info h2,
 .gallery h2,
 .rsvp h2,
@@ -163,6 +174,9 @@ body {
     font-size: 5rem;
     color: #d6e4f8;
     text-shadow: 5px 5px 5px   #2d2e39;
+    /* font-weight: bold; */
+    /* animation: naik 2s linear; */
+    
 }
 
 
@@ -178,6 +192,7 @@ body {
     color: #fff;
     text-shadow: 2px 2px 3px black;
 }
+
 
 .home .couple {
     margin-top: 100px;
@@ -213,7 +228,10 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 50%;
+    /* top: 50%; */
     transform: translateX(-50%) translateY(110%);
+    /* margin-top: 5px; */
+
 }
 
 .home .heart i {
@@ -223,6 +241,7 @@ body {
 
 
 .info {
+    /* background-color: #f3f2ee; */
     background-image: radial-gradient(#8e9db2, #2d2e39);
     background-size: cover;
     background-repeat: no-repeat;
@@ -230,6 +249,10 @@ body {
     padding-top: 10rem;
     padding-bottom: 8rem;
 }
+
+/* .info .container {
+    background-color: radial-gradient(#8e9db2, #2d2e39);
+} */
 
 .info h2 {
     color: #d6e4f8;
@@ -242,6 +265,7 @@ body {
     color: #FEFFD7;
     text-shadow: 2px 2px 3px rgb(78, 77, 77);
 }
+
 
 .info .alamat {
     font-size: 1.1rem;
@@ -305,14 +329,16 @@ body {
     font-weight: 0.9rem;
 }
 
+
+
 /* Story */
-.gallery, .rsvp, .gifts {
+.story, .gallery, .rsvp, .gifts {
     padding-top: 10rem;
     padding-bottom: 8rem;
     background-color: whitesmoke!important;
 }
 
-.gallery span, .gifts span {
+.story span, .gallery span, .gifts span {
     text-transform: uppercase;
     color: #daeff7;
     text-shadow: 2px 2px 3px rgb(78, 77, 77);
@@ -323,7 +349,7 @@ body {
     font-family: arial;
 }
 
-.gallery p, .rsvp p, .gifts p {
+.story p, .gallery p, .rsvp p, .gifts p {
     font-size: 1rem;
     font-weight: 300;
 }
@@ -345,7 +371,7 @@ body {
 }
 
 .rsvp p {
-    color: #999;
+    color: #fff;
 }
 
 .rsvp form label {
@@ -378,6 +404,10 @@ body {
     text-shadow: 3px 3px 3px rgb(78, 77, 77);
 }
 
+.gifts p {
+    color: #fff;
+}
+
 /* footer */
 footer {
     padding-top: 3rem;
@@ -401,7 +431,8 @@ footer li {
     display: inline;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    color: var(--pink);    
+    color: var(--pink);
+    
 }
 
 .audio-icon-wrapper {
@@ -436,6 +467,16 @@ footer li {
     
 }
 
+
+@keyframes naik {
+    from {
+        transform: margin-bottom(0);
+    }
+
+    to {
+        transform: margin-bottom(5px);
+    }
+}
   /* Media Query */
 
 
@@ -507,7 +548,11 @@ footer li {
 }
 
   /* Mobile Phopne */
-  @media (max-width: 576px) {    
+  @media (max-width: 576px) {
+
+
+    
+    
     html {
         font-size: 60%;
     }
