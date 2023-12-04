@@ -3,13 +3,11 @@
     --cream: #ceb8a4;
     --bg: #0a0a0a;
     --shadow: 0 2px 2px rgb(0 0 0 / 0.5) 
-    --bghome: radial-gradient( #8e9db2, #2d2e39);
 }
 
 body {
     font-size: 1.2rem;
     font-family: 'Work Sans', sans-serif;
-    /* min-height: 10000px; */
 }
 
 .hero:before {
@@ -39,7 +37,6 @@ body {
 .hero h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 6rem;
-    /* color: var(--pink); */
     color: black;
     text-shadow: 2px 2px 2px #6f8cb6;
 }
@@ -116,9 +113,7 @@ body {
 
 .mynavbar {
     background-color: rgba(255, 255, 255, 0.3)!important;
-    backdrop-filter: blur(4px);
-    
-    
+    backdrop-filter: blur(4px);  
 }
 
 .mynavbar .offcanvas {
@@ -140,19 +135,15 @@ body {
 .mynavbar .offcanvas-body a:hover {
     background-color: #8e9db2;
     color: white;
-
 }
 
 .mynavbar .nav-link {
-    /* font-weight: 600; */
     text-transform: uppercase;
 }
 
 .home {
     background-image: radial-gradient(#8e9db2, #2d2e39);
-    /* background-color: #ccc; */
     background-position: center;
-    
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: grayscale;
@@ -164,18 +155,14 @@ body {
 
 
 .home h2, 
-.story h2,
 .info h2,
 .gallery h2,
 .rsvp h2,
 .gifts h2 {
-    color: #2d2e39;
     font-family: 'Great Vibes', cursive;
     font-size: 5rem;
-    text-shadow: 5px 5px 5px #949FAE;
-    /* font-weight: bold; */
-    /* animation: naik 2s linear; */
-    
+    color: #d6e4f8;
+    text-shadow: 5px 5px 5px   #2d2e39;
 }
 
 
@@ -192,15 +179,14 @@ body {
     text-shadow: 2px 2px 3px black;
 }
 
-
 .home .couple {
     margin-top: 100px;
 }
 
 .home .couple h3 {
-    font-family: 'Great Vibes';
-    font-size: 2.4rem;
-    color: #DF2042;
+    font-family: 'Sacramento';
+    font-size: 3rem;
+    color: #f57a9f;
     text-shadow: 1px 1px 1px whitesmoke;
 }
 
@@ -227,10 +213,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 50%;
-    /* top: 50%; */
     transform: translateX(-50%) translateY(110%);
-    /* margin-top: 5px; */
-
 }
 
 .home .heart i {
@@ -240,7 +223,7 @@ body {
 
 
 .info {
-    background-color: #f3f2ee;
+    background-image: radial-gradient(#8e9db2, #2d2e39);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -249,10 +232,15 @@ body {
 }
 
 .info h2 {
-    color: #2d2e39;
+    color: #d6e4f8;
+    text-shadow: 5px 5px 5px   #2d2e39;
     font-family: 'Great Vibes';
     font-size: 5rem;
-    text-shadow: 5px 5px 5px #949FAE;
+}
+
+.info h3 {
+    color: #FEFFD7;
+    text-shadow: 2px 2px 3px rgb(78, 77, 77);
 }
 
 .info .alamat {
@@ -275,11 +263,7 @@ body {
 }
 
 .info p {
-    color: gray !important;
-}
-
-.info p :nth-child(1) {
-    color: #f7f8a3!important;
+    color: #fff !important;
 }
 
 .info a {
@@ -299,9 +283,10 @@ body {
 }
 
 .info .card {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    color: rgb(46, 45, 45) !important;
-    border: 1px solid #999;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: #fff!important;
+    border: 1px solid whitesmoke;
+    text-shadow: 1px 1px 1px rgb(78, 77, 77);
 }
 
 .info .card-header {
@@ -320,18 +305,17 @@ body {
     font-weight: 0.9rem;
 }
 
-
-
 /* Story */
-.story, .gallery, .rsvp, .gifts {
+.gallery, .rsvp, .gifts {
     padding-top: 10rem;
     padding-bottom: 8rem;
     background-color: whitesmoke!important;
 }
 
-.story span, .gallery span, .gifts span {
+.gallery span, .gifts span {
     text-transform: uppercase;
-    color: #666;
+    color: #daeff7;
+    text-shadow: 2px 2px 3px rgb(78, 77, 77);
     font-size: 0.9rem;
     letter-spacing: 1px;
     display: block;
@@ -339,23 +323,24 @@ body {
     font-family: arial;
 }
 
-.story p, .gallery p, .rsvp p, .gifts p {
+.gallery p, .rsvp p, .gifts p {
     font-size: 1rem;
     font-weight: 300;
 }
 
 /* Gallery */
-.gallery,
-.rsvp {
-    background-color: #eaeaea;
+.gallery {
+    background-image: radial-gradient(#8e9db2, #2d2e39);
 }
 
 .rsvp {
-    background-color: var(--bg);
+    background-image: radial-gradient(#8e9db2, #2d2e39);
 }
 
 .rsvp h2 {
     font-size: 4.5rem;
+    color: #d6e4f8;
+    text-shadow: 5px 5px 5px   #2d2e39;
 
 }
 
@@ -380,13 +365,17 @@ body {
 }
 
 /* GIFTS */
+.gifts {
+    background-image: radial-gradient(#8e9db2, #2d2e39);
+}
+
 .gifts ul li {
     font-size: 12px;
     font-family: arial, sans-serif;
 }
 .gifts h2 {
     font-size: 5rem;
-    text-shadow: 3px 3px 3px #8e9db2;
+    text-shadow: 3px 3px 3px rgb(78, 77, 77);
 }
 
 /* footer */
@@ -412,8 +401,7 @@ footer li {
     display: inline;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    color: var(--pink);
-    
+    color: var(--pink);    
 }
 
 .audio-icon-wrapper {
@@ -448,16 +436,6 @@ footer li {
     
 }
 
-
-@keyframes naik {
-    from {
-        transform: margin-bottom(0);
-    }
-
-    to {
-        transform: margin-bottom(5px);
-    }
-}
   /* Media Query */
 
 
@@ -496,7 +474,7 @@ footer li {
   /* Tablet */
   @media (max-width: 768px) {
     html {
-        font-size: 65%;
+        font-size: 85%;
     }
 
     body {
@@ -512,7 +490,9 @@ footer li {
     .mynavbar .nav-link {
         font-size: 2rem;
         text-align: center;
-    }    
+    }   
+    
+    
 
     .timeline li .timeline-image {
         width: 140px;
@@ -527,11 +507,9 @@ footer li {
 }
 
   /* Mobile Phopne */
-  @media (max-width: 576px) {
-    
-    
+  @media (max-width: 576px) {    
     html {
-        font-size: 60%;
+        font-size: 80%;
     }
 
     .simply-countdown>.simply-section {
@@ -547,7 +525,9 @@ footer li {
         text-align: center;
     }
 
-   
-    
-    
+    .mynavbar .nav-link {
+        font-size: 1.5rem;
+        width: 500px;
+
+    }
 }
